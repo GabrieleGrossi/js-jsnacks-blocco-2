@@ -14,11 +14,11 @@ while(!guessed){
 
     if (userInput===randomNumbers) {
         guessed = true
-        console.log('Complimenti, hai indovinato il numero generato randomicamente');
+        console.log('Congratulations, you have guessed the randomly generated number');
     } else if (userInput < randomNumbers){
-        console.log('Il numero randomico uscito è più grande rispetto al tuo numero')
+        console.log('The random number that came out is bigger than your number')
     } else {
-        console.log('Il numero randomico uscito è più piccolo rispetto al tuo numero')
+        console.log('The random number that came out is smaller than your number')
     }
 }
-console.log('Hai trovato il numero generato randomicamente in '+ attemps + ' tentativi!.')
+console.log('Did you find the randomly generated number in'+ attemps + ' attemps!.')
