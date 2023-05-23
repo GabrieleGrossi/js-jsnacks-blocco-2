@@ -3,7 +3,22 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body{background-color: #000b2f;}
+h1{
+    font-size: 45px;
+    color: white;
+    text-align: center;
+}
+ul{
+    margin: 0 auto;
+    width: 100px;
+    list-style-type: none;
+}
+li{
+    cursor: pointer;
+    color: white;
+}
 .barrato{
     text-decoration: line-through;
+    color: red;
 }
