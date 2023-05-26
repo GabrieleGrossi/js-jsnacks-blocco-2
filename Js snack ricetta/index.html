@@ -16,13 +16,19 @@
         </h1>
     </header>
     <main>
-        <div class="box">
-            <h2>
-                Inserisci gli ingredienti che vorresti nel tuo piatto di oggi
-            </h2>
-            <input>
-            </input>
-        </div>
+        <h1>
+            Sei a fare la spesa e non sai cosa cucinare?
+        <br>
+            Prova a scrivere degli ingredienti e scopri il piatto che potresti realizzare
+        </h1>
+        <label for="ingredient">Aggiungi un ingrediente al carrello:</label>
+        <input type="text" id="ingredient" />
+        <button onclick="addIngredient()">Aggiungi</button>
+        <br /><br />
+        <button onclick="generateMeal()">Genera pasto</button>
+        <br /><br />
+        <ul id="ingredients"></ul>
+        <div id="meal"></div>
     </main>
     <script src="script.js"></script>
 </body>
