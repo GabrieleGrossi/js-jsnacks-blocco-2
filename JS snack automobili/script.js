@@ -54,3 +54,9 @@ automobili.forEach(function(auto) {
     }
   });
 console.log(automobiliDiesel)
+
+//Creo un filter per tutte le altre auto
+altreAutomobili=automobili.filter(function(auto){
+    return auto.alimentazione !== "benzina" && auto.alimentazione !== "diesel";
+});
+console.log(altreAutomobili);
