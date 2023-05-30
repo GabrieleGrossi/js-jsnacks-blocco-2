@@ -38,7 +38,6 @@ const automobili = [
 const automobiliBenzina=[];
 const automobiliDiesel=[];
 const altreAutomobili=[];
-
 //Creo il ciclo for per le automobili a benzina
 for (let i=0; i < automobili.length; i++){
     const auto=automobili[i];
@@ -48,4 +47,10 @@ for (let i=0; i < automobili.length; i++){
 }
 console.log(automobiliBenzina);
 
-//
+//Creo il ciclo forEach per le automobili a diesel
+automobili.forEach(function(auto) {
+    if (auto.alimentazione === "diesel") {
+      automobiliDiesel.push(auto);
+    }
+  });
+console.log(automobiliDiesel)
