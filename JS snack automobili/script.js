@@ -48,15 +48,23 @@ for (let i=0; i < automobili.length; i++){
 console.log(automobiliBenzina);
 
 //Creo il ciclo forEach per le automobili a diesel
-automobili.forEach(function(auto) {
-    if (auto.alimentazione === "diesel") {
-      automobiliDiesel.push(auto);
+automobili.forEach( (element, index, array) => {
+    if (element.alimentazione === "diesel") {
+      automobiliDiesel.push(element);
     }
   });
-console.log(automobiliDiesel)
+console.log(automobiliDiesel);
 
 //Creo un filter per tutte le altre auto
-altreAutomobili=automobili.filter(function(auto){
-    return auto.alimentazione !== "benzina" && auto.alimentazione !== "diesel";
+//altreAutomobili=automobili.filter(function(auto){
+    //return auto.alimentazione !== "benzina" && auto.alimentazione !== "diesel";
+//});
+//console.log(altreAutomobili);
+
+automobili.filter ((auto)=>{
+    if (auto.alimentazione !== 'diesel' && auto.alimentazione !== 'benzina') {
+        return true;
+    }
+    return false;
 });
 console.log(altreAutomobili);
